@@ -68,3 +68,15 @@ next-level-button {
     margin-top: 370px;
 }
 
+#summary-scene.in {
+    transition-delay: .5s;
+}
+
+#gameover-scene{
+    background: url(images/gameover_bg.png);
+}
+
+#back-to-menu-button{
+    background-image: url(images/restart_btn.png);
+    margin-top: 270px;
+}
