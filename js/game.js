@@ -1,6 +1,11 @@
 (function(){
     //Entry Point
     var init = function(){
+        game.startScene.handleInpu();
+        game.summaryScene.handleInput();
+        game.sumaryScene.handleInpt();
+        game.gameoverScene.handleInput();
+        game.gameScene.handleInput();
     };
     
     init(); //start th egame
