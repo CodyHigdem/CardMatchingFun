@@ -9,14 +9,24 @@
 
   <body>
     <!---Game content here---->
-      <header>
+    <header>
     <div class="row">
       <h1>Color Quest</h1>
     </div>
     
   </header>
   <section id="game">
-    
+    <div id="game-scene" class="scene out">
+      <a href="#" id="gameover-btn">Game Over</a>
+        <a href="#" id="finish-btn">Finish</a>
+      </div>
+      <div id="start-scene" class="scene">
+      <a href="#" id="start-btn" class="button"</div>
+          <div id="summary-scene" class="scene out">
+          <a href="#" id="next-level-button" class="button">Next</a></div>
+          <div id="gameover-scene" class="scene out">
+          <a hef="#" id="back-to-menu-button" class="button">Back to menu</a>
+          </div>
   </section>
     <section class="how-to-play">
       <div class="row"
@@ -24,6 +34,14 @@
       <p>Composite your card to match the given pattern.</p>
       </div>
     </section>
+    <footer>
+        <div class="row">
+            <p> This game is aesome.</p>
+        </div>
+    </footer>
+<div id='element-template'>
+</div>
+    <script src="js/scenes.js"></script>
     <script src='js/game.js'></script>
     
   </body>
