@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <meta charset='utf-8'>
-    <title>Color Quest</title>
-    <link rel="stylesheet" href="game.css">
-    
-  </head>
-
-  <body>
-    <!---Game content here---->
-    <header>
+<head>
+  <meta charset='utf-8'>
+  <title>Color Quest</title>
+  <link rel="stylesheet" href="game.css">
+</head>
+<body>
+  <header>
     <div class="row">
       <h1>Color Quest</h1>
     </div>
-    
   </header>
-  <section id="game">
-    <div id="game-scene" class="scene out">
-      <a href="#" id="gameover-btn">Game Over</a>
-        <a href="#" id="finish-btn">Finish</a>
-      </div>
-      <div id="start-scene" class="scene">
-      <a href="#" id="start-btn" class="button"</div>
-          <div id="summary-scene" class="scene out">
-          <a href="#" id="next-level-button" class="button">Next</a></div>
-          <div id="gameover-scene" class="scene out">
-          <a hef="#" id="back-to-menu-button" class="button">Back to menu</a>
-          </div>
-  </section>
-    <section class="how-to-play">
-      <div class="row"
-      <h2> How to Play?</h2>
-      <p>Composite your card to match the given pattern.</p>
-      </div>
-    </section>
-    <footer>
-        <div class="row">
-            <p> This game is aesome.</p>
+  <section id="game" class="row">
+    <!-- game elements here -->
+      <div id="game-scene" class="scene out">
+        <div id="stage">Stage 1</div>
+        <div id="quest" class="quest">
+            <div id="quest-composition" class="composition"></div>  
         </div>
-    </footer>
-<div id='element-template'>
-</div>
+      </div>
+      
+      <div id="element-templae">
+        <!-- for composition view -->
+        <div class="pattern" data-pattern="1">
+          
+        </div>
+      </div>
+  </section>
+  <section class='how-to-play row'>
+    <h2>How to Play?</h2>
+    <p>Composite your deck with the patterns look exactly the same as the provided one</p>
+  </section>
+  <footer>
+    <div class="row">
+      <p>Copyright goes here.</p>
+    </div>
+  </footer>
+    <script src="js/patch.js"></script>
+    <script src="js/composition.js"></script>
+    <script src="js/quest.js"></script>
     <script src="js/scenes.js"></script>
     <script src='js/game.js'></script>
-    
-  </body>
-  
+</body>
 </html>
